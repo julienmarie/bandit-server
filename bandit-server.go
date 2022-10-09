@@ -15,13 +15,11 @@ import (
 )
 
 var port int = 3000
-var memcached string = "no"
 
 var logger = log.New(os.Stdout, "bandit-server: ", log.Ldate|log.Ltime)
 
 func init() {
 	flag.IntVar(&port, "port", 3000, "http port")
-	flag.StringVar(&memcached, "use-memcached", "no", "Memcached host:port. Usualy you don't need memcache (read README.md).")
 }
 
 func main() {
@@ -31,11 +29,7 @@ func main() {
 
 	var repo repository.Repository
 
-	if memcached == "no" {
-		repo = repository.NewMemory()
-	} else {
-		repo = repository.NewMemcached(memcached)
-	}
+	repo = repository.NewMemory()
 
 	http.HandleFunc("/favicon.ico", func(w http.ResponseWriter, r *http.Request) {
 		var favicon, _ = assets.Asset("favicon.ico")
