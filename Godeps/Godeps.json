@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/peleteiro/bandit-server",
+	"ImportPath": "github.com/julienmarie/bandit-server",
 	"GoVersion": "go1.6",
 	"GodepVersion": "v60",
 	"Deps": [
