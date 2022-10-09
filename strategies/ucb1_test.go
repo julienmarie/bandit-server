@@ -1,7 +1,7 @@
 package strategies
 
 import (
-	"github.com/peleteiro/bandit-server/repository"
+	"github.com/julienmarie/bandit-server/repository"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )

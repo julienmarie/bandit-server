@@ -3,8 +3,8 @@ package handlers
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/peleteiro/bandit-server/repository"
-	"github.com/peleteiro/bandit-server/strategies"
+	"github.com/julienmarie/bandit-server/repository"
+	"github.com/julienmarie/bandit-server/strategies"
 	"net/http"
 	"strings"
 )
