@@ -6,7 +6,7 @@ run: generate
 	go run bandit-server.go
 
 rerun: generate
-	$(GOPATH)/bin/rerun github.com/peleteiro/bandit-server
+	$(GOPATH)/bin/rerun github.com/julienmarie/bandit-server
 
 get:
 	go get github.com/skelterjohn/rerun/...
